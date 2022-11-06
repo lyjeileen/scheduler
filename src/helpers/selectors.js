@@ -12,3 +12,14 @@ export function getAppointmentsForDay(state, day) {
 
   return filteredAppointments;
 }
+
+export function getInterview(state, interview) {
+  if (interview) {
+    const interviewObj = {};
+    interviewObj.student = interview.student;
+    const id = interview.interviewer;
+    interviewObj.interviewer = state.interviewers[id];
+    return interviewObj;
+  }
+  return null;
+}
