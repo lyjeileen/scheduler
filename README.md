@@ -1,8 +1,12 @@
 # Interview Scheduler
 
-## Setup
+A React application that allows users to book and cancel interviews.
 
-Install dependencies with `npm install`.
+## Getting Started
+
+1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
+2. Clone your repository onto your local device.
+3. Install dependencies using the `npm install` command.
 
 ## Running Webpack Development Server
 
@@ -21,3 +25,25 @@ npm test
 ```sh
 npm run storybook
 ```
+
+## Running Cypress
+
+```sh
+npm run cypress
+```
+
+## Dependencies
+
+- axios
+- @testing-library/react-hooks
+- react-test-renderer
+- @storybook/react
+
+
+## Screenshots
+
+!["Main page"](https://github.com/lyjeileen/scheduler/blob/master/docs/application.png?raw=true)
+
+!["Create/Edit an interview"](https://github.com/lyjeileen/scheduler/blob/master/docs/appointment-form.png?raw=true)
+
+!["Delete an interview"](https://github.com/lyjeileen/scheduler/blob/master/docs/confirm.png?raw=true)
