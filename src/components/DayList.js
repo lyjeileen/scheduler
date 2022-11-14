@@ -8,6 +8,7 @@ export default function DayList(props) {
         key={day.id}
         name={day.name}
         spots={day.spots}
+        //props.value = state.day from Application component
         selected={day.name === props.value}
         setDay={props.onChange}
       />

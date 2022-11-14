@@ -1,7 +1,8 @@
-import React, { useEffect, useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import axios from 'axios';
 
 export default function useApplicationData(initial) {
+  //define action type
   const SET_DAY = 'SET_DAY';
   const SET_APPLICATION_DATA = 'SET_APPLICATION_DATA';
   const SET_INTERVIEW = 'SET_INTERVIEW';
@@ -71,11 +72,13 @@ export default function useApplicationData(initial) {
         value: {
           appointments: {
             ...state.appointments,
+            //change the appointment info with this id
             [id]: {
               ...state.appointments[id],
               interview: { ...interview },
             },
           },
+          //change remaining spots if it's a new appointment
           ...(!state.appointments[id].interview ? { days } : {}),
         },
       })
@@ -83,6 +86,7 @@ export default function useApplicationData(initial) {
   }
 
   function cancelInterview(id) {
+    //create new appointments data without deleted interview info
     const appointment = { ...state.appointments[id], interview: null };
     const appointments = { ...state.appointments, [id]: appointment };
     const days = updateSpots(id, false);
