@@ -7,6 +7,7 @@ A React application that allows users to book and cancel interviews.
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
 2. Clone your repository onto your local device.
 3. Install dependencies using the `npm install` command.
+4. Go to [Scheduler-API](https://github.com/lyjeileen/scheduler-api), fork and clone the repository. Follow README.md to setup scheduler API.
 
 ## Running Webpack Development Server
 
