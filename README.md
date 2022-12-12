@@ -39,12 +39,16 @@ npm run cypress
 - @testing-library/react-hooks
 - react-test-renderer
 - @storybook/react
+- jest
+- classnames
 
 
 ## Screenshots
-
+- On the side bar, user can see how many spots are available for each day. On the main section, user can see the booked interviews and add/edit/delete an interview.
 !["Main page"](https://github.com/lyjeileen/scheduler/blob/master/docs/application.png?raw=true)
 
+- User can edit an interview.
 !["Create/Edit an interview"](https://github.com/lyjeileen/scheduler/blob/master/docs/appointment-form.png?raw=true)
 
+- User need to confirm in order to delete an interview.
 !["Delete an interview"](https://github.com/lyjeileen/scheduler/blob/master/docs/confirm.png?raw=true)
